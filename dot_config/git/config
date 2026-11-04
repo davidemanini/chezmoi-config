@@ -1,0 +1,35 @@
+[core]
+	editor = emacs -nw
+	autocrlf = input
+	autoSetupRemote = true
+#	pager = "/home/davide/bin/ov"
+
+[user]
+	name = Davide Manini
+	email = davide@manini.cloud
+[advice]
+	addEmptyPathspec = false
+[init]
+	defaultBranch = master
+
+[credential]
+	helper = /usr/bin/pass-git-helper
+
+[credential "https://git.overleaf.com"]
+	username = git
+
+[color "status"]
+    branch = "bold magenta"
+    localBranch = "bold magenta"
+    remoteBranch = "bold blue"
+
+[color "branch"]
+    current = "bold magenta"
+    remote = "bold blue"
+
+
+
+[pager]
+    diff = "/home/davide/bin/ov -F --section-delimiter '^diff' --section-header"
+#    log = "/home/davide/bin/ov -F --section-delimiter '^commit' --section-header-num 3"
+    show = "/home/davide/bin/ov -F --header 3"
