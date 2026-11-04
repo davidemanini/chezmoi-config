@@ -2,7 +2,7 @@
 {
     // "layer": "top", // Waybar at top layer
     "position": "left", // Waybar position (top|bottom|left|right)
-    "height": 1080, // Waybar height (to be removed for auto height)
+//    "height": 1080, // Waybar height (to be removed for auto height)
     "width": 40, // Waybar width
     "spacing": 0, // Gaps between modules (4px)
     "mode": "dock",
@@ -128,7 +128,7 @@
         }
     },
     "tray": {
-        "icon-size": 21,
+        "icon-size": 26,
         "spacing": 10
     },
     "custom/voxtype": {
@@ -140,7 +140,7 @@
     },
     "clock": {
         // "timezone": "America/New_York",
-	"format": "{:%d%b%H:%M}",
+	"format": "{:%d%b\n%H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
   //      "format-alt": "{:%Y-%m-%d}"
     },
@@ -150,7 +150,7 @@
 	"on-click": "exec mate-system-monitor",
 	"on-click-right": "exec sensible-terminal -T top -e top",
 	"on-click-middle": "exec sensible-terminal -T htop -e htop",
-        "format": "{usage}<small>%</small>{avg_frequency:.1f}G",
+        "format": "{usage}<small>%</small>\n{avg_frequency:.1f}G",
 	"align": "right",
         "tooltip": false
     },
